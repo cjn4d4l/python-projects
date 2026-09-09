@@ -1,4 +1,5 @@
 #grade converter program
+import os
 
 def calculate_grade(hps, score):
     return (score / hps) * 100
@@ -20,8 +21,9 @@ while True:
         if choose == "yes":
             print()
             error = False
+            os.system('cls')
         elif choose == "no":
-            print("\nExiting program")
+            print("\nExiting program Grade Converter Program")
             error = False
             choice = "no"
         else:
